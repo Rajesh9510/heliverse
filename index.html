@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Management System</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="search-container">
+            <label for="search_input">Search by Name:</label>
+            <input type="text" id="search_input" placeholder="Enter name...">
+        </div>
+        <div class="filter-container">
+            <div class="domain_filter">
+                <label class="domain_name" for="domain_select">Filter by Domain: </label>
+                <select id="domain_select">
+                    <option value="All">All</option>
+                    <option value="UI Designing">UI Designing</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Finance">Finance</option>
+                    <option value="IT">IT</option>
+                    <option value="Management">Management</option>
+                </select>
+            </div>
+            <div class="gender_filter">
+                <label class="gender_name" for="gender_select">Filter by Gender: </label>
+                <select id="gender_select">
+                    <option value="">All</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="check_filter">
+                <label for="availability_checkbox">Availability: </label>
+                <input type="checkbox" id="availability_checkbox">
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="card-container" id="data_output"></div>
+    </section>
+    <div class="pagination"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
